@@ -1,4 +1,4 @@
-update=11/18/2016 1:52:04 AM
+update=11/18/16 20:03:18
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../../Dropbox/vishnu/kicad/My libreries;C:/Users/thing/Dropbox/vishnu/kicad/My libreries;C:/Users/thing/Dropbox/vishnu/kicad/My libreries/cc1310_7x7
+LibDir=../Library
 [eeschema/libraries]
 LibName1=cc1310_7x7/inductor_L
 LibName2=crystal_24MHz
@@ -68,3 +68,6 @@ LibName36=cc1310_7x7/crystal_24MHz
 LibName37=cc1310_7x7/cc1310_7x7_u1a
 LibName38=cc1310_7x7/L_Induc
 LibName39=cc1310_7x7/cc1310_7x7_u1b
+LibName40=cc1310_7x7
+LibName41=cc1310_7x7_u1b
+LibName42=inductor_L
