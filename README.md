@@ -50,9 +50,8 @@ This step is same for all boards working with SRF06EB.
 and make changes to the file as specified in
 [cc26xx and cc13xx](https://github.com/JelmerT/cc2538-bsl/blob/master/README.md#cc26xx-and-cc13xx)
 
-
 3) Now you can directly start using 
-	$  sudo make TARGET=srf06-cc26xx BOARD=srf06/cc13xx <filename>.upload PORT=/dev/ttyUSB1
+		$  sudo make TARGET=srf06-cc26xx BOARD=srf06/cc13xx <filename>.upload PORT=/dev/ttyUSB1
 to flash the firmware onto the cc13xx/cc26xx devices. You might need to hold on to SELECT BUTTON and press EM RESET before flashing to go into bootloader mode. 
 After the first time, the device automatically goes into this mode whenever you are flashing the code. 
 USB port must be appropriately selected. 
@@ -66,6 +65,22 @@ The following examples are intended to work off-the-shelf:
 * Border router: `examples/ipv6/rpl-border-router`
 * Webserver: `examples/webserver-ipv6`
 * CoAP example: `examples/er-rest-example`
+
+Build your First Examples
+-------------------------
+It is recommended to start with the `cc26xx-demo`, it is a simple example that demonstrates the thingBot-SubGHz features, such as the built-in sensors, LEDs, user button and radio.
+
+The `Makefile.target` includes the `TARGET=` argument, predefining which is the target platform to compile for, it is automatically included at compilation.
+
+To generate or override an existing one, you can run:
+
+`make TARGET=srf06-cc26xx BOARD=srf06/cc13xx savetarget`
+
+If you want to upload the compiled firmware to a node via the serial boot loader you need first to either manually enable the boot loader.
+
+Then use `make cc26xx-demo.upload`. 
+
+The `PORT` argument could be used to specify in which port the device is connected, in case we have multiple devices connected at the same time.
 
 Port Features
 =============
