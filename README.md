@@ -124,5 +124,5 @@ the section ["Drivers" in the CC2538DK readme](https://github.com/contiki-os/con
 ## Maintainers
 
 The thingBot-SubGHz is maintained by thingTronics Innovations.
-
-Main contributor: lovelesh Patel <lovelesh.patel@thingtronics.com>
+Main contributor: * Lovelesh Patel @<lovelesh.patel@thingtronics.com>
+                  * Vishnu Sherikar @<vishnu.sherikar@thingtronics.com>
