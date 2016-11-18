@@ -1,5 +1,5 @@
-thingBot-SubGHz platform
-========================
+# thingBot-SubGHz platform
+
 The thingBot-SubGHz is based on TI's CC1310 SoC (System on Chip), featuring an ARM Cortex-M3 running at 32 MHz and with 28 kbytes of RAM and 128 kbytes of FLASH. It has the following key features:
 
   * Standard Cortex M3 peripherals (NVIC, SCB, SysTick)
@@ -24,8 +24,7 @@ The thingBot-SubGHz is based on TI's CC1310 SoC (System on Chip), featuring an A
   * PWM
   * Built-in core temperature and battery sensor
   
-Getting Started with Contiki for TI CC13xx
-==========================================
+## Getting Started with Contiki for TI CC13xx
 
 This guide's aim is to help you start using Contiki for TI's CC13xx.
 
@@ -57,8 +56,8 @@ After the first time, the device automatically goes into this mode whenever you 
 USB port must be appropriately selected. 
 Generally ttyUSB0 is for XDS100v3 and ttyUSB1 for the TARGET device.
 
-Use the Port
-============
+### Use the Port
+
 The following examples are intended to work off-the-shelf:
 
 * Examples under `examples/cc26xx`
@@ -66,8 +65,8 @@ The following examples are intended to work off-the-shelf:
 * Webserver: `examples/webserver-ipv6`
 * CoAP example: `examples/er-rest-example`
 
-Build your First Examples
--------------------------
+### Build your First Examples
+
 It is recommended to start with the `cc26xx-demo`, it is a simple example that demonstrates the thingBot-SubGHz features, such as the built-in sensors, LEDs, user button and radio.
 
 The `Makefile.target` includes the `TARGET=` argument, predefining which is the target platform to compile for, it is automatically included at compilation.
@@ -82,8 +81,8 @@ Then use `make cc26xx-demo.upload`.
 
 The `PORT` argument could be used to specify in which port the device is connected, in case we have multiple devices connected at the same time.
 
-Port Features
-=============
+### Port Features
+
 The platform has the following key features:
 
 * Deep Sleep support with RAM retention for ultra-low energy consumption
@@ -96,8 +95,8 @@ In terms of hardware support, the following drivers have been implemented:
   * Buttons
   * UART connectivity over the XDS100v3 backchannel
 
-Requirements
-============
+### Requirements
+
 To use the port you need:
 
 * TI's CC13xxware sources. The correct version will be installed automatically
@@ -122,7 +121,8 @@ To use the port you need:
 operating system and so that you can use the chip's UART for I/O. Please read
 the section ["Drivers" in the CC2538DK readme](https://github.com/contiki-os/contiki/tree/master/platform/cc2538dk#drivers).
 
-Maintainers
-===========
+## Maintainers
+
 The thingBot-SubGHz is maintained by thingTronics Innovations.
+
 Main contributor: lovelesh Patel <lovelesh.patel@thingtronics.com>
