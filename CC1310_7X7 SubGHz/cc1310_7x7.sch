@@ -33,6 +33,8 @@ LIBS:cc1310_7x7
 LIBS:cc1310_7x7_u1a
 LIBS:cc1310_7x7_u1b
 LIBS:inductor_L
+LIBS:10_pin_JTAG
+LIBS:xbee
 LIBS:cc1310_7x7-cache
 EELAYER 25 0
 EELAYER END
@@ -49,41 +51,41 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text GLabel 2100 3200 0    39   Input ~ 0
-DIO_1
+TX
 Text GLabel 2100 3100 0    39   Input ~ 0
-DIO_2
+RX
 Text GLabel 2100 3000 0    39   Input ~ 0
 DIO_3
 Text GLabel 2100 2900 0    39   Input ~ 0
-DIO_4
+SCL
 Text GLabel 2900 2250 1    39   Input ~ 0
-DIO_5
+SDA
 Text GLabel 3000 2250 1    39   Input ~ 0
-DIO_6
+GREEN_LED
 Text GLabel 3100 2250 1    39   Input ~ 0
-DIO_7
+YELLOW_LED
 Text GLabel 3200 2250 1    39   Input ~ 0
-DIO_8
+SPI_MISO
 Text GLabel 3300 2250 1    39   Input ~ 0
-DIO_9
+SPI_MOSI
 Text GLabel 3400 2250 1    39   Input ~ 0
-DIO_10
+SPI_CLK
 Text GLabel 3500 2250 1    39   Input ~ 0
-DIO_11
+SPI_nCS
 Text GLabel 3600 2250 1    39   Input ~ 0
 DIO_12
 Text GLabel 3700 2250 1    39   Input ~ 0
 DIO_13
 Text GLabel 3800 2250 1    39   Input ~ 0
-DIO_14
+BSL
 Text GLabel 3900 2250 1    39   Input ~ 0
 DIO_15
 Text GLabel 4000 2250 1    39   Input ~ 0
-DIO_16/JTAG_TDO
+JTAG_TDO
 Text GLabel 2850 4700 3    39   Input ~ 0
-DIO_17/JTAG_TDI
+JTAG_TDI
 Text GLabel 2950 4700 3    39   Input ~ 0
-DIO_18
+PWM0
 $Comp
 L FILTER FL?
 U 1 1 582D9809
@@ -353,23 +355,23 @@ $EndComp
 $Comp
 L R R?
 U 1 1 582E25A5
-P 1250 2350
-F 0 "R?" H 1500 2400 50  0000 R BNN
-F 1 "100K" H 1400 2300 50  0000 C TNN
-F 2 "Resistors_SMD:R_0402" H 1180 2350 50  0001 C CNN
-F 3 "" H 1250 2350 50  0000 C CNN
-	1    1250 2350
-	1    0    0    -1  
+P 1250 2850
+F 0 "R?" V 1400 2900 50  0000 R BNN
+F 1 "100K" V 1100 2850 50  0000 C TNN
+F 2 "Resistors_SMD:R_0402" H 1180 2850 50  0001 C CNN
+F 3 "" H 1250 2850 50  0000 C CNN
+	1    1250 2850
+	-1   0    0    1   
 $EndComp
 $Comp
 L C C?
 U 1 1 582E27B9
-P 1250 3050
-F 0 "C?" H 1300 3150 50  0000 L CNN
-F 1 "100nF" H 1300 2950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 1288 2900 50  0001 C CNN
-F 3 "" H 1250 3050 50  0000 C CNN
-	1    1250 3050
+P 1250 3250
+F 0 "C?" H 1300 3350 50  0000 L CNN
+F 1 "100nF" H 1300 3150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H 1288 3100 50  0001 C CNN
+F 3 "" H 1250 3250 50  0000 C CNN
+	1    1250 3250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -680,7 +682,7 @@ F 3 "" H 1350 700 50  0000 C CNN
 	1    1350 700 
 	1    0    0    -1  
 $EndComp
-Text GLabel 1250 1950 1    39   Input ~ 0
+Text GLabel 1250 2450 1    39   Input ~ 0
 VDDS
 Text GLabel 2600 750  1    39   Input ~ 0
 VDDS
@@ -755,7 +757,7 @@ F 3 "" H 2300 4300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3050 4700 3    39   Input ~ 0
-DIO_19
+PWM1
 Text GLabel 3150 4700 3    39   Input ~ 0
 DIO_20
 Text GLabel 3250 4700 3    39   Input ~ 0
@@ -767,35 +769,35 @@ DIO_23
 Text GLabel 3550 4700 3    39   Input ~ 0
 DIO_24
 Text GLabel 3650 4700 3    39   Input ~ 0
-DIO_25
+RED_LED
 Text GLabel 3750 4700 3    39   Input ~ 0
-DIO_26
+AD3
 Text GLabel 3850 4700 3    39   Input ~ 0
-DIO_27
+ORANGE_LED
 Text GLabel 3950 4700 3    39   Input ~ 0
-DIO_28
+AD2
 Text GLabel 4050 4700 3    39   Input ~ 0
-DIO_29
+AD1
 Text GLabel 4650 4150 3    39   Input ~ 0
-DIO_30
+AD0
 Text GLabel 2100 3600 0    39   Input ~ 0
 DCDC_SW
 Text GLabel 2100 3300 0    39   Input ~ 0
 JTAG_TMS
 Text GLabel 2100 3400 0    39   Input ~ 0
 JTAG_TCK
-Text GLabel 800  2800 0    39   Input ~ 0
+Text GLabel 800  3100 0    39   Input ~ 0
 nRESET
 Text GLabel 6850 800  1    39   Input ~ 0
 VDDR
 Text GLabel 650  5300 1    39   Input ~ 0
-DIO_25
+RED_LED
 Text GLabel 950  5300 1    39   Input ~ 0
-DIO_27
+ORANGE_LED
 Text GLabel 1250 5300 1    39   Input ~ 0
-DIO_7
+YELLOW_LED
 Text GLabel 1550 5300 1    39   Input ~ 0
-DIO_6
+GREEN_LED
 $Comp
 L LED D?
 U 1 1 58342F04
@@ -1023,7 +1025,146 @@ VDDS
 Text GLabel 2600 5750 2    39   Input ~ 0
 nRESET
 Text GLabel 3600 5750 2    39   Input ~ 0
-DIO_12
+BSL
+$Comp
+L C C?
+U 1 1 583059DC
+P 10200 3200
+F 0 "C?" H 10225 3300 50  0000 L CNN
+F 1 "DNM" H 10225 3100 50  0000 L CNN
+F 2 "" H 10238 3050 50  0000 C CNN
+F 3 "" H 10200 3200 50  0000 C CNN
+	1    10200 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58305A9F
+P 10650 3200
+F 0 "C?" H 10675 3300 50  0000 L CNN
+F 1 "DNM" H 10675 3100 50  0000 L CNN
+F 2 "" H 10688 3050 50  0000 C CNN
+F 3 "" H 10650 3200 50  0000 C CNN
+	1    10650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58305D2B
+P 10200 3400
+F 0 "#PWR?" H 10200 3150 50  0001 C CNN
+F 1 "GND" H 10200 3250 50  0000 C CNN
+F 2 "" H 10200 3400 50  0000 C CNN
+F 3 "" H 10200 3400 50  0000 C CNN
+	1    10200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58305DD2
+P 10650 3400
+F 0 "#PWR?" H 10650 3150 50  0001 C CNN
+F 1 "GND" H 10650 3250 50  0000 C CNN
+F 2 "" H 10650 3400 50  0000 C CNN
+F 3 "" H 10650 3400 50  0000 C CNN
+	1    10650 3400
+	1    0    0    -1  
+$EndComp
+Text Notes 3000 800  0    79   ~ 0
+VDDS Decoupling Capacitors
+Text Notes 7050 800  0    79   ~ 0
+VDDR Decoupling Capacitors
+Text Notes 5450 1800 0    60   ~ 0
+Place L331 and C331 close to pin 33 (DCDC_SW)\nLow inductance ground for C331
+$Comp
+L XBEE U?
+U 1 1 58302BB6
+P 9750 5000
+F 0 "U?" H 9800 4950 60  0000 C CNN
+F 1 "XBEE" H 9350 5700 60  0000 C CNN
+F 2 "" H 9750 5000 60  0001 C CNN
+F 3 "" H 9750 5000 60  0001 C CNN
+	1    9750 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58302D74
+P 8900 5450
+F 0 "#PWR?" H 8900 5200 50  0001 C CNN
+F 1 "GND" H 8900 5300 50  0000 C CNN
+F 2 "" H 8900 5450 50  0000 C CNN
+F 3 "" H 8900 5450 50  0000 C CNN
+	1    8900 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 58305D04
+P 8900 4400
+F 0 "#PWR?" H 8900 4250 50  0001 C CNN
+F 1 "+3.3V" H 8900 4540 50  0000 C CNN
+F 2 "" H 8900 4400 50  0000 C CNN
+F 3 "" H 8900 4400 50  0000 C CNN
+	1    8900 4400
+	1    0    0    -1  
+$EndComp
+Text GLabel 8850 4650 0    39   Input ~ 0
+RX
+Text GLabel 8850 4550 0    39   Input ~ 0
+TX
+Text GLabel 10800 4450 2    39   Input ~ 0
+SDA
+Text GLabel 10800 4550 2    39   Input ~ 0
+SCL
+$Comp
+L R R?
+U 1 1 58318015
+P 10600 4150
+F 0 "R?" H 10500 4200 50  0000 R BNN
+F 1 "3.3K" H 10450 4100 50  0000 C TNN
+F 2 "Resistors_SMD:R_0402" H 10530 4150 50  0001 C CNN
+F 3 "" H 10600 4150 50  0000 C CNN
+	1    10600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58318777
+P 10750 4150
+F 0 "R?" H 11000 4200 50  0000 R BNN
+F 1 "3.3K" H 10900 4100 50  0000 C TNN
+F 2 "Resistors_SMD:R_0402" H 10680 4150 50  0001 C CNN
+F 3 "" H 10750 4150 50  0000 C CNN
+	1    10750 4150
+	1    0    0    -1  
+$EndComp
+Text GLabel 10600 3850 0    39   Input ~ 0
+VDDS
+Text GLabel 8850 5250 0    39   Input ~ 0
+SPI_MISO
+Text GLabel 8850 4750 0    39   Input ~ 0
+SPI_MOSI
+Text GLabel 10800 5250 2    39   Input ~ 0
+SPI_nCS
+Text GLabel 10800 4950 2    39   Input ~ 0
+SPI_CLK
+Text GLabel 10800 5150 2    39   Input ~ 0
+BSL
+Text GLabel 10800 4650 2    39   Input ~ 0
+AD0
+Text GLabel 10800 4750 2    39   Input ~ 0
+AD1
+Text GLabel 10800 4850 2    39   Input ~ 0
+AD2
+Text GLabel 8850 4850 0    39   Input ~ 0
+nRESET
+Text GLabel 8850 4950 0    39   Input ~ 0
+PWM0
+Text GLabel 8850 5050 0    39   Input ~ 0
+PWM1
+Text GLabel 10800 5350 2    39   Input ~ 0
+AD3
 Connection ~ 2600 1000
 Wire Wire Line
 	2600 1000 2600 750 
@@ -1048,11 +1189,7 @@ Wire Wire Line
 Wire Wire Line
 	7000 2900 8050 2900
 Wire Wire Line
-	1250 1950 1250 2200
-Wire Wire Line
-	1250 3200 1250 3450
-Wire Wire Line
-	1250 2500 1250 2900
+	1250 2450 1250 2700
 Wire Wire Line
 	1450 3800 1450 4250
 Wire Wire Line
@@ -1162,11 +1299,6 @@ Connection ~ 6400 4450
 Wire Wire Line
 	2300 3500 1600 3500
 Wire Wire Line
-	1600 3500 1600 2700
-Wire Wire Line
-	1600 2700 1250 2700
-Connection ~ 1250 2700
-Wire Wire Line
 	2300 3700 650  3700
 Connection ~ 650  4150
 Wire Wire Line
@@ -1247,8 +1379,8 @@ Wire Wire Line
 Wire Wire Line
 	2100 3600 2300 3600
 Wire Wire Line
-	800  2800 1250 2800
-Connection ~ 1250 2800
+	800  3100 1600 3100
+Connection ~ 1250 3100
 Wire Wire Line
 	6850 800  6850 1000
 Connection ~ 6850 1000
@@ -1300,66 +1432,16 @@ Wire Wire Line
 Connection ~ 5650 4550
 Wire Wire Line
 	10550 2900 10700 2900
-$Comp
-L C C?
-U 1 1 583059DC
-P 10200 3200
-F 0 "C?" H 10225 3300 50  0000 L CNN
-F 1 "DNM" H 10225 3100 50  0000 L CNN
-F 2 "" H 10238 3050 50  0000 C CNN
-F 3 "" H 10200 3200 50  0000 C CNN
-	1    10200 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 58305A9F
-P 10650 3200
-F 0 "C?" H 10675 3300 50  0000 L CNN
-F 1 "DNM" H 10675 3100 50  0000 L CNN
-F 2 "" H 10688 3050 50  0000 C CNN
-F 3 "" H 10650 3200 50  0000 C CNN
-	1    10650 3200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10200 3050 10200 2900
 Connection ~ 10200 2900
 Wire Wire Line
 	10650 3050 10650 2900
 Connection ~ 10650 2900
-$Comp
-L GND #PWR?
-U 1 1 58305D2B
-P 10200 3400
-F 0 "#PWR?" H 10200 3150 50  0001 C CNN
-F 1 "GND" H 10200 3250 50  0000 C CNN
-F 2 "" H 10200 3400 50  0000 C CNN
-F 3 "" H 10200 3400 50  0000 C CNN
-	1    10200 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 58305DD2
-P 10650 3400
-F 0 "#PWR?" H 10650 3150 50  0001 C CNN
-F 1 "GND" H 10650 3250 50  0000 C CNN
-F 2 "" H 10650 3400 50  0000 C CNN
-F 3 "" H 10650 3400 50  0000 C CNN
-	1    10650 3400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10650 3400 10650 3350
 Wire Wire Line
 	10200 3400 10200 3350
-Text Notes 3000 800  0    79   ~ 0
-VDDS Decoupling Capacitors
-Text Notes 7150 800  0    79   ~ 0
-VDDR Decoupling Capacitors
-Text Notes 5450 1800 0    60   ~ 0
-Place L331 and C331 close to pin 33 (DCDC_SW)\nLow inductance ground for C331
 Wire Wire Line
 	8100 1400 8100 1300
 Wire Wire Line
@@ -1406,6 +1488,153 @@ Wire Wire Line
 	8800 3200 8800 3350
 Wire Wire Line
 	7850 3200 7850 3350
-Text Notes 7550 4750 0    60   ~ 0
-SPI_CLK -> DIO_10\nSPI_nCS -> DIO_11\nSPI_MISO -> DIO_8\nSPI_MOSI -> DIO_9\nBSL -> DIO_14\nSCL -> DIO_4\nSDA -> DIO_5\nADC0 -> DIO_23\nADC1 -> DIO_24\nADC2 -> DIO_25
+Wire Wire Line
+	8900 5450 8900 5350
+Wire Wire Line
+	8900 5350 9000 5350
+Wire Wire Line
+	8900 4400 8900 4450
+Wire Wire Line
+	8900 4450 9000 4450
+Wire Wire Line
+	8850 4550 9000 4550
+Wire Wire Line
+	8850 4650 9000 4650
+Wire Wire Line
+	10600 4300 10600 4450
+Connection ~ 10600 4450
+Wire Wire Line
+	10750 4300 10750 4550
+Connection ~ 10750 4550
+Wire Wire Line
+	10600 3850 10600 4000
+Wire Wire Line
+	10600 3850 10750 3850
+Wire Wire Line
+	10750 3850 10750 4000
+Wire Wire Line
+	10550 4450 10800 4450
+Wire Wire Line
+	10550 4550 10800 4550
+Wire Wire Line
+	10550 5150 10800 5150
+Wire Wire Line
+	10550 5250 10800 5250
+Wire Wire Line
+	8850 5250 9000 5250
+Wire Wire Line
+	8850 4950 9000 4950
+Wire Wire Line
+	8850 4750 9000 4750
+Wire Wire Line
+	10800 4650 10550 4650
+Wire Wire Line
+	10800 4850 10550 4850
+Wire Wire Line
+	10550 4750 10800 4750
+Wire Wire Line
+	10550 4950 10800 4950
+Wire Wire Line
+	8850 4850 9000 4850
+Wire Wire Line
+	8850 5050 9000 5050
+Wire Wire Line
+	10550 5050 10650 5050
+$Comp
+L R_Small R?
+U 1 1 58346FCD
+P 10750 5050
+F 0 "R?" V 10700 4850 50  0000 L CNN
+F 1 "0E" V 10750 5000 50  0000 L CNN
+F 2 "" H 10750 5050 50  0000 C CNN
+F 3 "" H 10750 5050 50  0000 C CNN
+	1    10750 5050
+	0    1    1    0   
+$EndComp
+Text GLabel 10950 5050 2    39   Input ~ 0
+DIO_xx
+Text GLabel 8250 5150 0    39   Input ~ 0
+DIO_xx
+$Comp
+L R_Small R?
+U 1 1 58353DE7
+P 8450 5150
+F 0 "R?" V 8350 5150 50  0000 L CNN
+F 1 "0E" V 8450 5100 50  0000 L CNN
+F 2 "" H 8450 5150 50  0000 C CNN
+F 3 "" H 8450 5150 50  0000 C CNN
+	1    8450 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8550 5150 9000 5150
+Wire Wire Line
+	8250 5150 8350 5150
+Wire Wire Line
+	10850 5050 10950 5050
+Wire Wire Line
+	10550 5350 10800 5350
+Wire Wire Line
+	1600 3100 1600 3500
+Wire Wire Line
+	1250 3000 1250 3100
+Wire Wire Line
+	1250 3450 1250 3400
+$Comp
+L JTAG U?
+U 1 1 5839AAB1
+P 9850 5950
+F 0 "U?" H 9800 5750 60  0000 C CNN
+F 1 "JTAG" H 9600 6250 60  0000 C CNN
+F 2 "" H 9850 5950 60  0001 C CNN
+F 3 "" H 9850 5950 60  0001 C CNN
+	1    9850 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 583A01D2
+P 9050 6250
+F 0 "#PWR?" H 9050 6000 50  0001 C CNN
+F 1 "GND" H 9050 6100 50  0000 C CNN
+F 2 "" H 9050 6250 50  0000 C CNN
+F 3 "" H 9050 6250 50  0000 C CNN
+	1    9050 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5900 9050 6250
+Wire Wire Line
+	9050 6200 9150 6200
+Wire Wire Line
+	9050 6000 9150 6000
+Connection ~ 9050 6200
+Wire Wire Line
+	9050 5900 9150 5900
+Connection ~ 9050 6000
+Text GLabel 8950 5800 0    39   Input ~ 0
+VDDS
+Wire Wire Line
+	8950 5800 9150 5800
+NoConn ~ 9150 6100
+Text GLabel 10700 6200 2    39   Input ~ 0
+nRESET
+Text GLabel 10700 6100 2    39   Input ~ 0
+JTAG_TDI
+Text GLabel 10700 6000 2    39   Input ~ 0
+JTAG_TDO
+Text GLabel 10700 5900 2    39   Input ~ 0
+JTAG_TCK
+Text GLabel 10700 5800 2    39   Input ~ 0
+JTAG_TMS
+Wire Wire Line
+	10700 5800 10500 5800
+Wire Wire Line
+	10500 5900 10700 5900
+Wire Wire Line
+	10700 6000 10500 6000
+Wire Wire Line
+	10500 6100 10700 6100
+Wire Wire Line
+	10700 6200 10500 6200
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=11/18/16 20:03:18
+update=11/19/2016 12:25:22 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -71,3 +71,5 @@ LibName39=cc1310_7x7/cc1310_7x7_u1b
 LibName40=cc1310_7x7
 LibName41=cc1310_7x7_u1b
 LibName42=inductor_L
+LibName43=10_pin_JTAG
+LibName44=xbee
