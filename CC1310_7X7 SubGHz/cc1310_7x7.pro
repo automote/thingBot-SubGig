@@ -1,4 +1,4 @@
-update=11/18/16 20:03:18
+update=11/18/2016 11:43:15 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -71,3 +71,5 @@ LibName39=cc1310_7x7/cc1310_7x7_u1b
 LibName40=cc1310_7x7
 LibName41=cc1310_7x7_u1b
 LibName42=inductor_L
+LibName43=C:/Users/thing/Documents/thingBot-SubGHz/Library/xbee1
+LibName44=openwsn
