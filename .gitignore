@@ -18,3 +18,4 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
+CC1310_7X7 SubGHz/cc1310_7x7-cache.lib
