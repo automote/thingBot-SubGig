@@ -1,4 +1,4 @@
-update=11/19/2016 6:03:09 AM
+update=11/20/16 16:52:13
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=../Library
+LibDir=../Library;../../KiCad Components Library/kicad-library
 [eeschema/libraries]
 LibName1=24MHz
 LibName2=power
@@ -66,3 +66,13 @@ LibName34=cc1310_7x7_new
 LibName35=si7006
 LibName36=ltr-303als
 LibName37=sma_10v21_tgg
+LibName38=P:/PCB Design/KiCad Components Library/JOS_SMA_connectors/sma_edge
+LibName39=library/connectors
+LibName40=library/ic-cpu
+LibName41=library/ic-io
+LibName42=library/ic-misc
+LibName43=library/ic-power
+LibName44=library/opto
+LibName45=library/passive
+LibName46=library/power
+LibName47=library/switches
