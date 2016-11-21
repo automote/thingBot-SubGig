@@ -1,4 +1,4 @@
-update=11/21/16 17:20:51
+update=11/21/16 19:13:32
 version=1
 last_client=kicad
 [pcbnew]
@@ -91,3 +91,4 @@ LibName49=cc1310_7x7_u1b
 LibName50=crystal_24MHz
 LibName51=inductor
 LibName52=tps63051
+LibName53=tps782
