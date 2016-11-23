@@ -119,6 +119,6 @@ The `PORT` argument could be used to specify in which port the device is connect
 
 The thingBot-SubGHz is maintained by thingTronics Innovations.
 
-Main contributor: 
-	* Lovelesh Patel @<lovelesh.patel@thingtronics.com>
-    * Vishnu Sherikar @<vishnu.sherikar@thingtronics.com>
+Main contributor:
+ * Lovelesh Patel @<lovelesh.patel@thingtronics.com>
+ * Vishnu Sherikar @<vishnu.sherikar@thingtronics.com>

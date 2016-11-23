@@ -8,6 +8,7 @@
 *~
 _autosave-*
 *.tmp
+*-cache.lib
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -18,4 +19,3 @@ _autosave-*
 # Exported BOM files
 *.xml
 *.csv
-CC1310_7X7 SubGHz/cc1310_7x7-cache.lib

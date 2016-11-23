@@ -3,9 +3,9 @@ EESchema-LIBRARY Version 2.3
 #
 # inductor
 #
-DEF inductor U 0 40 Y Y 1 F N
-F0 "U" 0 0 60 H V C CNN
-F1 "inductor" -100 150 60 H V C CNN
+DEF inductor L 0 40 Y Y 1 F N
+F0 "L" 0 0 60 H V C CNN
+F1 "inductor" 150 100 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
