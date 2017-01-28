@@ -1,4 +1,4 @@
-# thingBot-SubGHz platform
+# thingBot-SubGHz
 
 The thingBot-SubGHz is based on TI's CC1310 SoC (System on Chip), featuring an ARM Cortex-M3 running at 32 MHz and with 28 kbytes of RAM and 128 kbytes of FLASH. It has the following key features:
 
@@ -28,6 +28,7 @@ The thingBot-SubGHz is based on TI's CC1310 SoC (System on Chip), featuring an A
 ## Platform Features
 
   * [XBee Compatible](https://www.sparkfun.com/datasheets/Wireless/Zigbee/XBee-Dimensional.pdf)
+  * Compatible with Contiki OS
   * c-JTAG (10 pin Cortex-M connector)
   * On-board LEDs
   * 3.3V Vin

@@ -28,25 +28,17 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:inductor_L
-LIBS:10_pin_JTAG
 LIBS:xbee
-LIBS:cc1310_7x7_new
 LIBS:si7006
 LIBS:ltr-303als
-LIBS:sma_10v21_tgg
-LIBS:connectors
-LIBS:ic-cpu
-LIBS:ic-io
-LIBS:ic-misc
-LIBS:ic-power
-LIBS:passive
-LIBS:switches
-LIBS:crystal_24MHz
 LIBS:inductor
 LIBS:tps63051
 LIBS:tps782
 LIBS:0850bm14e0016
+LIBS:edge_sma
+LIBS:JTAG
+LIBS:crystal_24MHz
+LIBS:cc1310_7x7_new
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
@@ -602,9 +594,9 @@ Text GLabel 13300 9150 0    39   Input ~ 0
 SPI_MISO
 Text GLabel 13300 8650 0    39   Input ~ 0
 SPI_MOSI
-Text GLabel 15250 9150 2    39   Input ~ 0
+Text GLabel 13300 8950 0    39   Input ~ 0
 SPI_nCS
-Text GLabel 15250 8850 2    39   Input ~ 0
+Text GLabel 13300 8850 0    39   Input ~ 0
 SPI_CLK
 Text GLabel 15250 8550 2    39   Input ~ 0
 AD0
@@ -614,9 +606,9 @@ Text GLabel 15250 8750 2    39   Input ~ 0
 AD2
 Text GLabel 13300 8750 0    39   Input ~ 0
 nRESET
-Text GLabel 13300 8850 0    39   Input ~ 0
+Text GLabel 15250 9150 2    39   Input ~ 0
 PWM0
-Text GLabel 13300 8950 0    39   Input ~ 0
+Text GLabel 15250 8850 2    39   Input ~ 0
 PWM1
 Text GLabel 15250 9250 2    39   Input ~ 0
 AD3
@@ -639,7 +631,7 @@ $Comp
 L R_Small R12
 U 1 1 58353DE7
 P 12950 9050
-F 0 "R12" V 12875 9025 50  0000 L CNN
+F 0 "R12" V 12875 8975 50  0000 L CNN
 F 1 "DNM" V 13025 8900 39  0000 L CNN
 F 2 "" H 12950 9050 50  0000 C CNN
 F 3 "" H 12950 9050 50  0000 C CNN
@@ -717,17 +709,6 @@ F 3 "" H 1650 6625 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SMA_10V21_TGG U5
-U 1 1 58331F13
-P 8825 4825
-F 0 "U5" H 8875 4675 60  0000 C CNN
-F 1 "SMA_EDGE_CONNECTOR" H 8825 5025 60  0000 C CNN
-F 2 "" H 8825 4825 60  0001 C CNN
-F 3 "" H 8825 4825 60  0001 C CNN
-	1    8825 4825
-	1    0    0    -1  
-$EndComp
-$Comp
 L Si7006 U4
 U 1 1 5835C02D
 P 5025 9600
@@ -802,17 +783,6 @@ Text Notes 4250 9150 0    79   ~ 16
 Peripheral Section
 Text Notes 8450 9325 0    79   ~ 16
 Connector Section
-$Comp
-L XBEE P3
-U 1 1 583976FC
-P 14200 8900
-F 0 "P3" H 14250 8850 60  0000 C CNN
-F 1 "XBEE" H 13800 9600 60  0000 C CNN
-F 2 "" H 14200 8900 60  0001 C CNN
-F 3 "" H 14200 8900 60  0001 C CNN
-	1    14200 8900
-	1    0    0    -1  
-$EndComp
 Text Notes 7850 7125 0    60   ~ 0
 TX: DIO_3\nRX: DIO_2
 Text Notes 8400 7325 0    60   ~ 0
@@ -825,17 +795,6 @@ Text Notes 10600 7300 0    60   ~ 0
 PWM0: DIO_18\nPWM1: DIO_19\nPWM2: DIO_12\nPWM3: DIO_15
 Text Notes 9000 6775 0    79   ~ 16
 GPIO PIN MAPPING
-$Comp
-L crystal Y2
-U 1 1 5832D495
-P 5775 7100
-F 0 "Y2" H 5875 7425 60  0000 C CNN
-F 1 "24 MHz" H 5850 7325 60  0000 C CNN
-F 2 "" H 5775 7100 60  0001 C CNN
-F 3 "" H 5775 7100 60  0001 C CNN
-	1    5775 7100
-	1    0    0    -1  
-$EndComp
 $Comp
 L JTAG P2
 U 1 1 58352FCC
@@ -1923,17 +1882,6 @@ F 3 "" H 6950 5975 60  0001 C CNN
 	1    6950 5975
 	0    -1   -1   0   
 $EndComp
-$Comp
-L CC1310_7x7 U2
-U 1 1 58339B03
-P 4000 6075
-F 0 "U2" H 3900 6075 60  0000 C CNN
-F 1 "CC1310_7x7" H 3950 6375 60  0000 C CNN
-F 2 "" H 3800 6025 60  0001 C CNN
-F 3 "" H 3800 6025 60  0001 C CNN
-	1    4000 6075
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6800 5475 6375 5475
 Wire Wire Line
@@ -1978,4 +1926,48 @@ Wire Wire Line
 	7100 5475 7100 5225
 Wire Wire Line
 	7100 5225 7725 5225
+$Comp
+L CC1310_7x7 U2
+U 1 1 584932F9
+P 4000 6075
+F 0 "U2" H 4000 6075 60  0000 C CNN
+F 1 "CC1310_7x7" H 4050 6375 60  0000 C CNN
+F 2 "" H 3900 6025 60  0001 C CNN
+F 3 "" H 3900 6025 60  0001 C CNN
+	1    4000 6075
+	1    0    0    -1  
+$EndComp
+$Comp
+L EDGE_SMA U5
+U 1 1 5849436C
+P 8825 4825
+F 0 "U5" H 8875 4675 60  0000 C CNN
+F 1 "EDGE_SMA" H 8825 5025 60  0000 C CNN
+F 2 "" H 8825 4825 60  0001 C CNN
+F 3 "" H 8825 4825 60  0001 C CNN
+	1    8825 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L XBEE_MODULE U7
+U 1 1 584960BF
+P 14200 8900
+F 0 "U7" H 14250 8850 60  0000 C CNN
+F 1 "XBEE_MODULE" H 13800 9600 60  0000 C CNN
+F 2 "" H 14200 8900 60  0001 C CNN
+F 3 "" H 14200 8900 60  0001 C CNN
+	1    14200 8900
+	1    0    0    -1  
+$EndComp
+$Comp
+L crystal Y?
+U 1 1 584AFD8C
+P 5775 7100
+F 0 "Y?" H 5625 7000 60  0000 C CNN
+F 1 "crystal" H 5875 7300 60  0000 C CNN
+F 2 "" H 5775 7100 60  0001 C CNN
+F 3 "" H 5775 7100 60  0001 C CNN
+	1    5775 7100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
